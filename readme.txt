@@ -1,3 +1,4 @@
+=== Plugin Name ===
 Contributors: nathanrice, studiopress, studiograsshopper
 Tags: genesis, genesiswp, studiopress, woocommerce
 Requires at least: 3.3
@@ -10,7 +11,7 @@ This plugin allows you to seamlessly integrate WooCommerce with the Genesis Fram
 
 This plugin replaces WooCommerce's built-in shop templates with its own Genesis-ready versions, specifically the `single-product.php`, `archive-product.php` and `taxonomy.php` templates needed to display the single product page, the main shop page, and Product Category and Product Tag archive pages.
 
-To allow easy customisation of these templates, and ensure that you do not lose your customisations when the plugin is updated, you can place your own copies of these templates in your child theme's 'woocommerce' folder and customize these copies as much as you like. You can also create your own `taxonomy-{taxonomy}.php` and `taxonomy-{taxonomy}-{term}.php` templates in the same location and this plugin will find them and use them to display your shop's Product Category and Product Tag archives. See the [Template Hierarchy](http://codex.wordpress.org/Template_Hierarchy#Custom_Taxonomies_display) to learn more about naming requirements for taxonomy templates.
+To allow easy customization of these templates, and ensure that you do not lose your customizations when the plugin is updated, you can place your own copies of these templates in your child theme's 'woocommerce' folder and customize these copies as much as you like. You can also create your own `taxonomy-{taxonomy}.php` and `taxonomy-{taxonomy}-{term}.php` templates in the same location and this plugin will find them and use them to display your shop's Product Category and Product Tag archives. See the [Template Hierarchy](http://codex.wordpress.org/Template_Hierarchy#Custom_Taxonomies_display) to learn more about naming requirements for taxonomy templates.
 
 Additionally, the plugin makes [Genesis Simple Sidebars](http://wordpress.org/extend/plugins/genesis-simple-sidebars/) and [Genesis Simple Menus](http://wordpress.org/extend/plugins/genesis-simple-menus/) compatible with WooCommerce.
 
@@ -33,15 +34,15 @@ Make sure you have added this code to your Genesis child theme's `functions.php`
 
 = Can I customize the Genesis Connect for Woocommerce templates? =
 
-It's not recommended to customise the plugin's templates because, if you do, you will lose any customizations the next time the plugin is updated. Instead, take copies of the plugin's `single-product.php`, `archive-product.php` and `taxonomy.php` files, and place these copies in a folder called `woocommerce` in the root of your child theme's main folder, like this: `wp-content/themes/my-child-theme/woocommerce/`
+It's not recommended to customize the plugin's templates because, if you do, you will lose any customizations the next time the plugin is updated. Instead, take copies of the plugin's `single-product.php`, `archive-product.php` and `taxonomy.php` files, and place these copies in a folder called `woocommerce` in the root of your child theme's main folder, like this: `wp-content/themes/my-child-theme/woocommerce/`
 
 Make sure you keep the same file names!
 
-The plugin's templates provide a great starting point for your own customisations and can be found in the plugin's `templates` folder.
+The plugin's templates provide a great starting point for your own customizations and can be found in the plugin's `templates` folder.
 
 = I want to use WooCommerce's breadcrumbs, not Genesis breadcrumbs =
 
-There's no need! Genesis Connect for WooCommerce modifies the default Genesis breadcrumbs to give the same crumb structure as WooCommerce's built-in breadcrumbs. The modified Genesis breadcrumbs will reflect all your existing Genesis breadcrumb customisations too.
+There's no need! Genesis Connect for WooCommerce modifies the default Genesis breadcrumbs to give the same crumb structure as WooCommerce's built-in breadcrumbs. The modified Genesis breadcrumbs will reflect all your existing Genesis breadcrumb customizations too.
 
 = What if I want the main Shop page to be the site's front page? =
 
@@ -64,7 +65,7 @@ To use this stylesheet, check the "*Enable WooCommerce CSS styles*" checkbox in 
 
 Note that this code takes precedence over the checkbox in the *WooCommerce Settings page > General tab*; in other words, when you use this code, the checkbox is ignored.
 
-If you decide to use the WooCommerce CSS and wish to customise its styles, do *not* edit the `woocommerce.css` file. Instead, make a copy of this file, rename it `style.css` and place it in your child theme's `woocommerce` folder, and make all your edits in this file. This ensures that you do not lose your CSS customisations when WooCommerce is updated.
+If you decide to use the WooCommerce CSS and wish to customize its styles, do *not* edit the `woocommerce.css` file. Instead, make a copy of this file, rename it `style.css` and place it in your child theme's `woocommerce` folder, and make all your edits in this file. This ensures that you do not lose your CSS customizations when WooCommerce is updated.
 
 Alternatively, you can add your WooCommerce styles to your child theme's main style.css stylesheet. In this case, you should disable the WooCommerce built-in stylesheet: either uncheck the "*Enable WooCommerce CSS styles*" checkbox in the *WooCommerce Settings page > General tab*, or a better option, add this code to your child theme's `functions.php` file: `define( 'WOOCOMMERCE_USE_CSS', false );`
 
@@ -122,7 +123,7 @@ Allows further modification of the product archive (shop page) breadcrumbs.
 
 = More info about WooCommerce CSS handling =
 
-For the benefit of theme developers and customisers, here is a summary of possible scenarios for dealing with WooCommerce CSS:
+For the benefit of theme developers and customizers, here is a summary of possible scenarios for dealing with WooCommerce CSS:
 
 * Case 1: If the *WooCommerce > General settings > Enable WooCommerce CSS* option is checked, the default stylesheet supplied with WooCommerce will be loaded (see `wp-content/plugins/woocommerce/assets/css/woocommerce.css`).
 * Case 2: If *WooCommerce > General settings > Enable WooCommerce CSS* option is unchecked, no stylesheet is loaded.
