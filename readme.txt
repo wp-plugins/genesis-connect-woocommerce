@@ -4,7 +4,7 @@ Requires at least: 3.3
 Tested up to: 3.3.1
 Stable tag: 0.9.0
 
-This plugin allows you to seamlessly integrate WooCommerce with the Genesis Theme Framework and Genesis child themes.
+This plugin allows you to seamlessly integrate WooCommerce with the Genesis Framework and Genesis child themes.
 
 == Description ==
 
