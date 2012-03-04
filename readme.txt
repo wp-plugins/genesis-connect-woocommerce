@@ -17,8 +17,8 @@ Additionally, the plugin makes [Genesis Simple Sidebars](http://wordpress.org/ex
 
 == Installation ==
 
-1. Upload the entire `genesis-connect-for-woocommerce` folder to the `/wp-content/plugins/` directory
-2. DO NOT change the name of the `genesis-connect-for-woocommerce` folder
+1. Upload the entire `genesis-connect-woocommerce` folder to the `/wp-content/plugins/` directory
+2. DO NOT change the name of the `genesis-connect-woocommerce` folder
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Add this code to your Genesis child theme's `functions.php` file: `add_theme_support( 'genesis-connect-woocommerce' );`
 5. That's it. Navigate to your shop pages and you should see the new templates in action.
