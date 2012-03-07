@@ -15,6 +15,8 @@ To allow easy customization of these templates, and ensure that you do not lose 
 
 Additionally, the plugin makes [Genesis Simple Sidebars](http://wordpress.org/extend/plugins/genesis-simple-sidebars/) and [Genesis Simple Menus](http://wordpress.org/extend/plugins/genesis-simple-menus/) compatible with WooCommerce.
 
+Tested with WooCommerce 1.5
+
 == Installation ==
 
 1. Upload the entire `genesis-connect-woocommerce` folder to the `/wp-content/plugins/` directory
@@ -135,6 +137,10 @@ For the benefit of theme developers and customizers, here is a summary of possib
 * The above information is based on WooCommerce 1.4.4
 
 == Changelog ==
+
+= 0.9.1 =
+* Released 6 March 2012
+* Fixes call to undefined function error in sp-plugins-integration/genesis-simple-sidebars.php
 
 = 0.9.0 =
 * Initial Release
