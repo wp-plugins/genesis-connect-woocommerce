@@ -129,7 +129,7 @@ function gencwooc_ss_do_sidebar_alt() {
 	} else {
 
 		/** Hand back control to GSS */
-		if ( ! ss_do_one_sidebar_alt( $bar ) )
+		if ( ! ss_do_one_sidebar( $bar ) )
 			genesis_do_sidebar_alt();
 
 	}
