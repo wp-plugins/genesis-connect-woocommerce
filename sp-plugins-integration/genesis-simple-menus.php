@@ -2,6 +2,9 @@
 /**
  * Integration - Genesis Simple Menus
  *
+ * @package genesis_connect_woocommerce
+ * @version 0.9.3
+ *
  * @since 0.9.0
  *
  * Genesis Simple Menus (GSM) version 0.1.4

@@ -15,7 +15,7 @@ To allow easy customization of these templates, and ensure that you do not lose 
 
 Additionally, the plugin makes [Genesis Simple Sidebars](http://wordpress.org/extend/plugins/genesis-simple-sidebars/) and [Genesis Simple Menus](http://wordpress.org/extend/plugins/genesis-simple-menus/) compatible with WooCommerce.
 
-**Requires WooCommerce 1.5.2**
+**Requires WooCommerce 1.5.2+**
 
 == Installation ==
 
@@ -137,6 +137,11 @@ For the benefit of theme developers and customizers, here is a summary of possib
 * The above information is based on WooCommerce 1.4.4
 
 == Changelog ==
+
+= 0.9.3 =
+* Released 14 May 2012
+* taxonomy.php and archive-product.php now use woocommerce_get_template_part() instead of gencwooc_get_template_part()
+* gencwooc_get_template_part() updated to reflect latest version of woocommerce_get_template_part(). Note: gencwooc_get_template_part() will be deprecated in a future version. 
 
 = 0.9.2 =
 * Released 15 March 2012

@@ -2,6 +2,9 @@
 /**
  * Integration - Genesis Simple Sidebars
  *
+ * @package genesis_connect_woocommerce
+ * @version 0.9.3
+ *
  * @since 0.9.0
  *
  * Based on Genesis Simple Sidebars (GSS) version 0.9.2

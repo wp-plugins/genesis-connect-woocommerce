@@ -2,15 +2,17 @@
 /**
  * These functions manage loading of templates for WooCommerce
  *
- * @since 0.9.0
+ * @package genesis_connect_woocommerce
+ * @version 0.9.3
  *
+ * @since 0.9.0
  */
 
 /**
  * Prevent direct access to this file
  */
 if ( ! defined( 'ABSPATH' ) )
-	exit( __( 'Sorry, you are not allowed to access this file directly.', 'genwooc' ) );
+	exit( _( 'Sorry, you are not allowed to access this file directly.' ) );
 
 
 
@@ -119,24 +121,32 @@ function gencwooc_template_loader( $template ) {
  *
  * Based on woocommerce_get_template_part()
  *
+ * Note: updated v0.9.3 to reflect changes to woocommerce_get_template_part() introduced in
+ * WooC v1.4+
+ * Effectively, this function is a clone of woocommerce_get_template_part()
+ * and is ONLY RETAINED FOR BACKWARDS COMPATIBILITY for pre-0.9.2 custom templates which
+ * may use this function.
+ *
  * @since 0.9.0
  * @global object $woocommerce WooCommerce instance
  */
  function gencwooc_get_template_part( $slug, $name = '' ) {
 
 	global $woocommerce;
+	$template = '';
+	
+	// Look in yourtheme/slug-name.php and yourtheme/woocommerce/slug-name.php
+	if ( $name ) 
+		$template = locate_template( array ( "{$slug}-{$name}.php", "{$woocommerce->template_url}{$slug}-{$name}.php" ) );
+	
+	// Get default slug-name.php
+	if ( !$template && $name && file_exists( $woocommerce->plugin_path() . "/templates/{$slug}-{$name}.php" ) )
+		$template = $woocommerce->plugin_path() . "/templates/{$slug}-{$name}.php";
 
-	if ( 'shop' == $name ) :
+	// If template file doesn't exist, look in yourtheme/slug.php and yourtheme/woocommerce/slug.php
+	if ( !$template ) 
+		$template = locate_template( array ( "{$slug}.php", "{$woocommerce->template_url}{$slug}.php" ) );
 
-		if ( ! locate_template( array( 'woocommerce/loop-shop.php' ) ) ) :
-
-			load_template( $woocommerce->plugin_path() . '/templates/loop-shop.php', false );
-
-			return;
-
-		endif;
-
-	endif;
-
-	get_template_part( $slug, $name );
+	if ( $template ) 
+		load_template( $template, false );
 }
