@@ -3,7 +3,7 @@ Contributors: nathanrice, studiopress, studiograsshopper
 Tags: genesis, genesiswp, studiopress, woocommerce
 Requires at least: 3.3
 Tested up to: 3.3.1
-Stable tag: 0.9.2
+Stable tag: 0.9.3
 
 This plugin allows you to seamlessly integrate WooCommerce with the Genesis Framework and Genesis child themes.
 
@@ -141,7 +141,7 @@ For the benefit of theme developers and customizers, here is a summary of possib
 = 0.9.3 =
 * Released 14 May 2012
 * taxonomy.php and archive-product.php now use woocommerce_get_template_part() instead of gencwooc_get_template_part()
-* gencwooc_get_template_part() updated to reflect latest version of woocommerce_get_template_part(). Note: gencwooc_get_template_part() will be deprecated in a future version. 
+* gencwooc_get_template_part() updated to reflect latest version of woocommerce_get_template_part(). Note: gencwooc_get_template_part() will be deprecated in a future version and is only retained for backwards compatibility.
 
 = 0.9.2 =
 * Released 15 March 2012
