@@ -2,13 +2,14 @@
 Contributors: nathanrice, studiopress, studiograsshopper
 Tags: genesis, genesiswp, studiopress, woocommerce
 Requires at least: 3.3
-Tested up to: 3.3.1
+Tested up to: 3.4.1
 Stable tag: 0.9.3
 
 This plugin allows you to seamlessly integrate WooCommerce with the Genesis Framework and Genesis child themes.
 
 == Description ==
 
+* Note: this version is not compatible with WooCommerce 1.6.0 *
 This plugin replaces WooCommerce's built-in shop templates with its own Genesis-ready versions, specifically the `single-product.php`, `archive-product.php` and `taxonomy.php` templates needed to display the single product page, the main shop page, and Product Category and Product Tag archive pages.
 
 To allow easy customization of these templates, and ensure that you do not lose your customizations when the plugin is updated, you can place your own copies of these templates in your child theme's 'woocommerce' folder and customize these copies as much as you like. You can also create your own `taxonomy-{taxonomy}.php` and `taxonomy-{taxonomy}-{term}.php` templates in the same location and this plugin will find them and use them to display your shop's Product Category and Product Tag archives. See the [Template Hierarchy](http://codex.wordpress.org/Template_Hierarchy#Custom_Taxonomies_display) to learn more about naming requirements for taxonomy templates.
