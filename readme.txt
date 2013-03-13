@@ -2,7 +2,7 @@
 Contributors: nathanrice, studiopress, studiograsshopper
 Tags: genesis, genesiswp, studiopress, woocommerce
 Requires at least: 3.3
-Tested up to: 3.4.1
+Tested up to: 3.5.1
 Stable tag: 0.9.4
 
 This plugin allows you to seamlessly integrate WooCommerce with the Genesis Framework and Genesis child themes.
@@ -15,7 +15,7 @@ To allow easy customization of these templates, and ensure that you do not lose 
 
 Additionally, the plugin makes [Genesis Simple Sidebars](http://wordpress.org/extend/plugins/genesis-simple-sidebars/) and [Genesis Simple Menus](http://wordpress.org/extend/plugins/genesis-simple-menus/) compatible with WooCommerce.
 
-**This version is compatible with WooCommerce 1.6.0+**
+**This version is compatible with WooCommerce 2.0+**
 
 == Installation ==
 
@@ -39,6 +39,9 @@ Make sure you have added this code to your Genesis child theme's `functions.php`
 It's not recommended to customize the plugin's templates because, if you do, you will lose any customizations the next time the plugin is updated. Instead, take copies of the plugin's `single-product.php`, `archive-product.php` and `taxonomy.php` files, and place these copies in a folder called `woocommerce` in the root of your child theme's main folder, like this: `wp-content/themes/my-child-theme/woocommerce/`
 
 Make sure you keep the same file names!
+
+**Important**
+While the templates provided with this plugin will be kept up to date with any future changes to WooCommerce, please bear in mind that, if you create your own custom Genesis Connect for WooCommerce templates, it is your responsibility to enure that any code you add to your custom templates is compatible with WooCommerce.
 
 The plugin's templates provide a great starting point for your own customizations and can be found in the plugin's `templates` folder.
 
@@ -137,6 +140,10 @@ For the benefit of theme developers and customizers, here is a summary of possib
 * The above information is based on WooCommerce 1.4.4
 
 == Changelog ==
+
+= 0.9.5 =
+* Released 14 March 2013
+* add_theme_support( 'woocommerce' ) added to ensure compatibility with WooCommerce 2.0+
 
 = 0.9.4 =
 * Released 19 July 2012

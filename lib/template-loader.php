@@ -3,7 +3,7 @@
  * These functions manage loading of templates for WooCommerce
  *
  * @package genesis_connect_woocommerce
- * @version 0.9.4
+ * @version 0.9.5
  *
  * @since 0.9.0
  */

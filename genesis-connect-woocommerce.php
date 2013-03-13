@@ -2,7 +2,7 @@
 /*
 Plugin Name: Genesis Connect for WooCommerce
 Plugin URI: http://www.studiopress.com/plugins/genesis-connect-woocommerce
-Version: 0.9.4
+Version: 0.9.5
 Author: StudioPress
 Author URI: http://www.studiopress.com/
 Description: Allows you to seamlessly integrate WooCommerce with the Genesis Framework and Genesis child themes.
@@ -89,6 +89,9 @@ function gencwooc_setup() {
 	/** Load modified Genesis breadcrumb filters and callbacks */
 	if ( ! current_theme_supports( 'gencwooc-woo-breadcrumbs') )
 		require_once( GCW_LIB_DIR . '/breadcrumb.php' );
+		
+	/** Ensure WooCommerce 2.0+ compatibility */
+	add_theme_support( 'woocommerce' );
 
 	/** Add Genesis Layout and SEO options to Product edit screen */
 	add_post_type_support( 'product', array( 'genesis-layouts', 'genesis-seo' ) );

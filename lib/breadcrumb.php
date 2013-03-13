@@ -3,7 +3,7 @@
  * This file contains functions related modifying Genesis Breadcrumb output
  *
  * @package genesis_connect_woocommerce
- * @version 0.9.4
+ * @version 0.9.5
  *
  * @since 0.9.0
  *
@@ -40,7 +40,7 @@
  * Prevent direct access to this file
  */
 if ( ! defined( 'ABSPATH' ) )
-	exit( __( 'Sorry, you are not allowed to access this file directly.', 'genwooc' ) );
+	exit( __( 'Sorry, you are not allowed to access this file directly.' ) );
 
 
 
