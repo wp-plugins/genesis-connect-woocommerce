@@ -141,6 +141,10 @@ For the benefit of theme developers and customizers, here is a summary of possib
 
 == Changelog ==
 
+= 0.9.7 =
+* Released 22 December 2013
+* Removed link from Shop breadcrumb when viewing Shop page.
+
 = 0.9.6 =
 * Released 18 December 2013
 * Fixed bug re missing argument in the_title filter (in template-loader.php). Props Gary Jones.
