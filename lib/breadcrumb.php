@@ -3,7 +3,7 @@
  * This file contains functions related modifying Genesis Breadcrumb output
  *
  * @package genesis_connect_woocommerce
- * @version 0.9.5
+ * @version 0.9.7
  *
  * @since 0.9.0
  *
@@ -76,7 +76,7 @@ function gencwooc_get_archive_crumb_filter( $crumb, $args ) {
 
 		else :
 
-			$crumb = gencwooc_get_crumb_link( get_post_type_archive_link( 'product' ), $shop_name, $shop_name );
+			$crumb = $shop_name;
 
 		endif;
 
