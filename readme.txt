@@ -141,6 +141,7 @@ For the benefit of theme developers and customizers, here is a summary of possib
 
 == Changelog ==
 
+
 = 0.9.7 =
 * Released 22 December 2013
 * Removed link from Shop breadcrumb when viewing Shop page.
