@@ -2,7 +2,7 @@
 Contributors: nathanrice, studiopress, studiograsshopper
 Tags: genesis, genesiswp, studiopress, woocommerce
 Requires at least: 3.3
-Tested up to: 3.8
+Tested up to: 3.9.1
 Stable tag: 0.9.7
 
 This plugin allows you to seamlessly integrate WooCommerce with the Genesis Framework and Genesis child themes.
@@ -15,7 +15,7 @@ To allow easy customization of these templates, and ensure that you do not lose 
 
 Additionally, the plugin makes [Genesis Simple Sidebars](http://wordpress.org/extend/plugins/genesis-simple-sidebars/) and [Genesis Simple Menus](http://wordpress.org/extend/plugins/genesis-simple-menus/) compatible with WooCommerce.
 
-**This version is compatible with WooCommerce 2.0+**
+**This version is compatible with WooCommerce 2.1+**
 
 == Installation ==
 
@@ -141,6 +141,9 @@ For the benefit of theme developers and customizers, here is a summary of possib
 
 == Changelog ==
 
+= 0.9.8 =
+* Released 9 July 2014
+* Updates genesiswooc_content_product() to reflect WooC 2.1+ templates and correct handling of WooC's page title filter function
 
 = 0.9.7 =
 * Released 22 December 2013
