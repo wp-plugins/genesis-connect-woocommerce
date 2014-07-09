@@ -3,7 +3,7 @@
  * This file contains functions related modifying Genesis Breadcrumb output
  *
  * @package genesis_connect_woocommerce
- * @version 0.9.7
+ * @version 0.9.8
  *
  * @since 0.9.0
  *
