@@ -2,7 +2,7 @@
 Contributors: nathanrice, studiopress, studiograsshopper
 Tags: genesis, genesiswp, studiopress, woocommerce
 Requires at least: 3.3
-Tested up to: 3.9.1
+Tested up to: 4.2.4
 Stable tag: 0.9.8
 
 This plugin allows you to seamlessly integrate WooCommerce with the Genesis Framework and Genesis child themes.
